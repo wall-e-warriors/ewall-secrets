@@ -45,8 +45,11 @@ Now, you have created a public and private key pair. If you don't know what that
 * ["git + gpg, know thy commits" at coderwall](https://coderwall.com/p/d3uo3w/git-gpg-know-thy-commits)
 * ["Generating a new GPG key" by GitHub](https://help.github.com/articles/generating-a-new-gpg-key/)
 
+**UI for GPG**
 
-## Pre-Installation Steps
+Alternatively, you can also use ["GPG suite UI"](https://gpgtools.org/)
+
+## Installation Steps
 
 ```bash
 brew install gopass
