@@ -77,7 +77,18 @@ source <(gopass completion bash)
 There is [Gopass UI](https://github.com/codecentric/gopass-ui) which was exclusively implemented for gopass and is available for MacOS.
 
 
-## Using go-pass
+## Using e-wall secrets
+
+### Using this repo
+
+After installing `gopass` you can clone this repo using gopass.
+
+`gopass clone git@github.com:wall-e-warriors/ewall-secrets.git ewall`
+
+From then on you can add users, secrets and it will be shared to the other users.
+
+### How `gopass` works? (Gopass documentation)
 
 Once installed take some time to read through to understand how `gopass` works.
 https://github.com/gopasspw/gopass/blob/master/docs/features.md
+
