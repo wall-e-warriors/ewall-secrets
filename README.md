@@ -3,7 +3,7 @@
 
 ## Developer setup
 
-Gopass (https://github.com/gopasspw/gopass) needs to be installed to access this repository. Gopass has some dependencies, follow these steps to install them.
+[Gopass](https://github.com/gopasspw/gopass) needs to be installed to access this repository. Gopass has some dependencies, follow these steps to install them.
 
 ## Pre-Installation Steps
 
@@ -45,9 +45,26 @@ Now, you have created a public and private key pair. If you don't know what that
 * ["git + gpg, know thy commits" at coderwall](https://coderwall.com/p/d3uo3w/git-gpg-know-thy-commits)
 * ["Generating a new GPG key" by GitHub](https://help.github.com/articles/generating-a-new-gpg-key/)
 
+**Pushing the keys to Keyserver**
+
+You need to publish your public GPG key to the keyserver. So, we can mutually share the keys amongst us.
+
+List down your keys
+
+```bash
+gpg --list-secret-keys
+
+```
+
+Your public key id will a huge alpha numeric string ex: `3E285C2134EF81BB503A274CF26862F2714F366D`
+
+```bash
+gpg --send-key <<your_public_key_id>>
+```
+
 **UI for GPG**
 
-Alternatively, you can also use ["GPG suite UI"](https://gpgtools.org/)
+Alternatively, you can also use [GPG suite UI](https://gpgtools.org/)
 
 ## Installation Steps
 
@@ -77,7 +94,18 @@ source <(gopass completion bash)
 There is [Gopass UI](https://github.com/codecentric/gopass-ui) which was exclusively implemented for gopass and is available for MacOS.
 
 
-## Using go-pass
+## Using e-wall secrets
+
+### Using this repo
+
+After installing `gopass` you can clone this repo using gopass.
+
+`gopass clone git@github.com:wall-e-warriors/ewall-secrets.git ewall`
+
+From then on you can add users, secrets and it will be shared to the other users.
+
+### How `gopass` works? (Gopass documentation)
 
 Once installed take some time to read through to understand how `gopass` works.
 https://github.com/gopasspw/gopass/blob/master/docs/features.md
+
