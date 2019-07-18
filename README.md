@@ -3,7 +3,7 @@
 
 ## Developer setup
 
-Gopass (https://github.com/gopasspw/gopass) needs to be installed to access this repository. Gopass has some dependencies, follow these steps to install them.
+[Gopass](https://github.com/gopasspw/gopass) needs to be installed to access this repository. Gopass has some dependencies, follow these steps to install them.
 
 ## Pre-Installation Steps
 
@@ -47,7 +47,7 @@ Now, you have created a public and private key pair. If you don't know what that
 
 **UI for GPG**
 
-Alternatively, you can also use ["GPG suite UI"](https://gpgtools.org/)
+Alternatively, you can also use [GPG suite UI](https://gpgtools.org/)
 
 ## Installation Steps
 
