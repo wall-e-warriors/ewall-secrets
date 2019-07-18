@@ -45,6 +45,23 @@ Now, you have created a public and private key pair. If you don't know what that
 * ["git + gpg, know thy commits" at coderwall](https://coderwall.com/p/d3uo3w/git-gpg-know-thy-commits)
 * ["Generating a new GPG key" by GitHub](https://help.github.com/articles/generating-a-new-gpg-key/)
 
+**Pushing the keys to Keyserver**
+
+You need to publish your public GPG key to the keyserver. So, we can mutually share the keys amongst us.
+
+List down your keys
+
+```bash
+gpg --list-secret-keys
+
+```
+
+Your public key id will a huge alpha numeric string ex: `3E285C2134EF81BB503A274CF26862F2714F366D`
+
+```bash
+gpg --send-key <<your_public_key_id>>
+```
+
 **UI for GPG**
 
 Alternatively, you can also use [GPG suite UI](https://gpgtools.org/)
